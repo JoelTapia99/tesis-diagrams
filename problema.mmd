@@ -1,0 +1,31 @@
+---
+config:
+  layout: dagre
+---
+flowchart TD
+ subgraph subGraph0["Entrada de datos"]
+        A["Recepción de información<br>en PDF"]
+  end
+ subgraph subGraph1["Procesamiento manual"]
+        B["Conversión manual<br>a Excel"]
+        C["Mapeo y análisis<br>de datos en hojas de cálculo"]
+  end
+ subgraph subGraph2["Almacenamiento descentralizado"]
+        D["Multiples archivos<br>Excel independientes"]
+  end
+ subgraph Consecuencias["Consecuencias"]
+        E["Falta de centralización<br>y accesibilidad"]
+        F["Demoras y errores<br>en actualización"]
+        G["Escasa transparencia<br>en responsabilidades"]
+        H["Baja escalabilidad<br>del sistema"]
+        I["Errores Humanos"]
+  end
+    A --> subGraph1
+    B --> C
+    C --> subGraph2
+    D --> E & F & G & H & I
+    style E fill:#fdd,stroke:#900,stroke-width:1px
+    style F fill:#fdd,stroke:#900,stroke-width:1px
+    style G fill:#fdd,stroke:#900,stroke-width:1px
+    style H fill:#fdd,stroke:#900,stroke-width:1px
+    style I fill:#fdd,stroke:#900,stroke-width:1px

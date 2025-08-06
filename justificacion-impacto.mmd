@@ -1,0 +1,45 @@
+flowchart LR
+    direction TB
+        G1[Enfoque general]
+        G2[Mejora tiempo, eficiencia y calidad de gestión]
+        C1[Manual vs Automatización]
+        C2[Destaca beneficios frente a procesos manuales]
+        S1[Social]
+        S2[Aumenta eficacia operativa, reduce costos y mejora transparencia]
+        T1[Técnica]
+        T2[Optimiza recursos, minimiza errores y fomenta TIC]
+
+    J1[Justificación e Impacto]
+
+    direction TB
+        A1[Académica]
+        A2[Genera conocimientos replicables y evidencia carencias manuales]
+        I1[Institucional]
+        I2[Fomenta innovación y transformación digital]
+        M1[Ágil]
+        M2[Planificación flexible y adaptabilidad]
+        V1[Viabilidad]
+        V2[Recursos técnicos, humanos y económicos disponibles]
+
+    %% Conexiones izquierda hacia centro
+    G1 --> J1
+    C1 --> J1
+    S1 --> J1
+    T1 --> J1
+
+    G2 --> G1
+    C2 --> C1
+    S2 --> S1
+    T2 --> T1
+
+    %% Conexiones centro hacia derecha
+    J1 --> A1
+    J1 --> I1
+    J1 --> M1
+    J1 --> V1
+
+    A1 --> A2
+    I1 --> I2
+    M1 --> M2
+    V1 --> V2
+      %% Estilo de los nodos
